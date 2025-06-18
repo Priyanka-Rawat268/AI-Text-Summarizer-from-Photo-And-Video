@@ -1,10 +1,3 @@
-"""
-app.py - Main backend for my AI Summarization Project
-Created by: [Your Name]
-Description: Basic Flask app to upload videos, texts, and images,
-             then generate simple summaries (placeholder logic).
-"""
-
 import os
 import time
 import logging
@@ -85,23 +78,7 @@ def upload_video():
 
     return render_template('error.html', message='Unsupported video format.')
 
-# -------- Text summarization routes --------
 
-@app.route('/text')
-def text_page():
-    return render_template('text.html')
-
-@app.route('/process_text', methods=['POST'])
-def process_text():
-    input_text = request.form.get('text_input', '').strip()
-
-    if not input_text:
-        return render_template('error.html', message='Please enter some text.')
-
-    # Placeholder summary logic
-    summary_text = f"Summary placeholder: {input_text[:75]}..."
-
-    return render_template('result_text.html', original=input_text, summary=summary_text)
 
 # -------- Image summarization routes --------
 
