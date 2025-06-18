@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Summary</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="result-container">
+    <h2> Video Summary</h2>
+    <div class="summary-text">
+      {{ summary }}
+    </div>
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+</body>
+</html>

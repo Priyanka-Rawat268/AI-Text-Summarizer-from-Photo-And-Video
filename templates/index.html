@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Summarization Platform</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1></h1> AI-Powered Summarization Tool</h1>
+    <p>Summarize videos and images with the power of artificial intelligence</p>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Our platform allows you to extract key insights from educational videos and digitized images.
+      Quickly summarize content with just a few clicks.
+    </p>
+  </section>
+
+  <!-- Updated: Only two boxes, stacked vertically -->
+  <section id="options" class="vertical-layout">
+    <a href="/video" class="summary-box">
+      <h3> Video Summarization</h3>
+      <p>Upload a video or paste a YouTube link to get a short summary.</p>
+    </a>
+
+    <a href="/image" class="summary-box">
+      <h3> Image Summarization</h3>
+      <p>Upload images (handwritten or printed) and generate a text summary.</p>
+    </a>
+  </section>
+</body>
+</html>

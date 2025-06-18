@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Summary Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="image-result-container">
+    <h2> Image Summary Result</h2>
+
+    <h3>Extracted Text:</h3>
+    <div class="image-section">
+      {{ extracted_text }}
+    </div>
+
+    <h3>Summary:</h3>
+    <div class="image-section">
+      {{ summary }}
+    </div>
+
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+</body>
+</html>
