@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Summarization</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1> Video Summarization</h1>
+    <p>Enter a YouTube video link to generate a summary</p>
+  </header>
+
+  <!-- Form Section -->
+  <div class="container">
+    <form class="video-form" action="/upload_video" method="POST">
+      <label for="url"><strong>Video URL:</strong></label><br>
+      <input type="text" name="url" placeholder="Paste YouTube video link" required><br>
+      <button type="submit">Summarize</button>
+    </form>
+
+    <a href="/" class="back-link">← Back to Home</a>
+  </div>
+
+</body>
+</html>
 
